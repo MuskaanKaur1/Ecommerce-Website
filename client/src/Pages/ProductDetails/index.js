@@ -6,7 +6,6 @@ import { MdShoppingCart } from "react-icons/md";
 import Tooltip from '@mui/material/Tooltip';
 import ProductZoom from '../../Components/ProductZoom';
 import QuantityBox from '../../Components/QuantityBox';
-//import RelatedProducts from '../../Components/RelatedProducts';
 import { useContext, useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 import { fetchDataFromApi } from '../../utils/api';
@@ -241,22 +240,9 @@ const ProductDetails=()=>{
                         }
 
                         
-                        
-
-
-
-                        
                     </div>
                 </div>
 
-                <br/>
-{/*
-                {
-                    realtedProductData?.length !==0 && <RelatedProducts title="RELATED PRODUCTS" data={realtedProductData}/>
-                }
-
-                <RelatedProducts  title="RECENTLY VIEWED PRODUCTS"/>
-                */}
             </div>
         </section>
         </>
