@@ -1,17 +1,6 @@
 const {Category} = require('../models/category');
 const express = require('express');
 const router = express.Router();
-{/*const pLimit = require('p-limit');
-const cloudinary = require('cloudinary').v2;
-
-
-cloudinary.config({
-    cloud_name : process.env.cloudinary_Config_Cloud_Name,
-    api_key : process.env.cloudinary_Config_api_key,
-    api_secret : process.env.cloudinary_Config_api_secret,
-    secure:true
-});
-*/}
 
 
 const multer = require('multer');
@@ -36,23 +25,18 @@ const storage = multer.diskStorage({
   const upload = multer({ storage: storage })
 
 
-
-
   router.post(`/upload`,upload.array("images"), async (req,res) => {
     
     if(categoryEditId!==undefined){
         const category = await Category.findById(categoryEditId);
 
-
         const images = category.images;
-
-
+        
         if(images.length!==0){
             for (image of images){
                 fs.unlinkSync(`uploads/${image}`);
             }
         }
-    
     }
 
     imagesArr=[];
@@ -93,7 +77,6 @@ router.get(`/`, async (req,res) => {
 
 
 
-
     if (!categoryList){
         res.status(500).json({success:false})
     }
@@ -107,19 +90,15 @@ router.get(`/`, async (req,res) => {
         res.status(500).json({success:false})
     }
 
-
 });
-
 
 
 
 router.get(`/:id`, async (req,res) => {
 
-
     categoryEditId= req.params.id;
    
     const category = await Category.findById(req.params.id);
-
 
     if (!category){
         res.status(500).json({ message: 'The category with the given ID was not found,'})
@@ -130,10 +109,8 @@ router.get(`/:id`, async (req,res) => {
 
 router.delete(`/:id`, async (req,res) => {
 
-
     const category = await Category.findById(req.params.id);
     const images = category.images;
-
 
     if(images.length!==0){
         for(image of images){
@@ -211,11 +188,4 @@ router.put(`/:id`, async (req,res) => {
 
 
 module.exports = router;
-
-
-
-
-//ReoAssbLBx0fnJ7e //Mongodb password
-
-
 
