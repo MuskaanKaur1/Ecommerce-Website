@@ -74,7 +74,7 @@ const SignIn=()=>{
                             onChange={(e) => setPassword(e.target.value)}/>
                         </div>
 
-                        {/* <a className="border-effect cursor row">Forget Password?</a>*/}
+                         <a className="border-effect cursor row">Forget Password?</a>
 
                         <div className="d-flex align items-center mt-3 mb-3">
                         <Button className="btn-blue btn-lg btn-big col" type="submit">Sign In</Button>
@@ -83,10 +83,10 @@ const SignIn=()=>{
                         
 
                         <p>Not Registered? <Link to="/SignUp" className="border-effect">SignUp</Link> </p>
-                        {/*<h6 className="mt-3 text-center font-weight-bold">Or continue with social account</h6>
+                        <h6 className="mt-3 text-center font-weight-bold">Or continue with social account</h6>
 
                        
-                        <Button className="googleImg"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS53QVG-0mxeuhm8Vg_w0646YfPvJK3Q0HGA&s" /></Button>*/}
+                        <Button className="googleImg"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS53QVG-0mxeuhm8Vg_w0646YfPvJK3Q0HGA&s" /></Button>
                         
                          
 
