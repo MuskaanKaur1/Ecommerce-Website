@@ -33,7 +33,7 @@ const ProductModel=(props)=>{
         setActiveSize(index);
     }
 
-     // ✅ Update local state when `wishlistItems` changes
+     // Update local state when `wishlistItems` changes
      useEffect(() => {
         setIsFavorite(wishlistItems.some(item => item.id === productToAdd.id));
     }, [wishlistItems, productToAdd.id]);
@@ -55,7 +55,7 @@ const ProductModel=(props)=>{
     };
     
     
-    // ✅ Toggle Wishlist Function
+    // Toggle Wishlist Function
     const toggleWishlist = () => {
         setWishlistItems(prevWishlist =>
             isFavorite
@@ -131,7 +131,7 @@ const ProductModel=(props)=>{
 
                                 <div className='d-flex align-items-center mt-4 actions'>
                                     
-                                {/* ✅ Toggle Wishlist Button with Dynamic Heart Color */}
+                                {/* Toggle Wishlist Button with Dynamic Heart Color */}
                             <Button 
                                 className='btn-round btn-sml' 
                                 variant="outlined" 
