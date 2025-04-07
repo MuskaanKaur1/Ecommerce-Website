@@ -2,7 +2,6 @@
 
 This is a full-featured **eCommerce website** built using the **MERN stack** (MongoDB, Express, React, Node.js). It includes user authentication, product browsing, wishlist functionality and cart functionality.
 
----
 
 ##  Features
 
@@ -13,7 +12,6 @@ This is a full-featured **eCommerce website** built using the **MERN stack** (Mo
 -  Responsive UI for both desktop and mobile in admin panel
 - Users can order products by cash on delivery model
 
----
 
 ## Tech Stack
 
@@ -29,5 +27,4 @@ This is a full-featured **eCommerce website** built using the **MERN stack** (Mo
 - Multer (Image Upload)
 - dotenv  
 
----
 
