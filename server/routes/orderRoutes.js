@@ -24,7 +24,7 @@ router.post("/place-order", async (req, res) => {
         const newOrder = new Order({
             user,
             cartItems: cartItems.map(item => ({
-                productId: item.id || item._id,  // ✅ Ensure correct product ID field
+                productId: item.id || item._id,  //  Ensure correct product ID field
                 name: item.name,
                 price: item.price,
                 imageUrl: item.imageUrl,
