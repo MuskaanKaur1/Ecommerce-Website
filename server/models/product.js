@@ -27,22 +27,13 @@ const productSchema = mongoose.Schema({
         type:Number,
         default:0,
     },
-//    catName: {
-//        type: String,
-//        required: true, // Now catName must be provided when creating a product
-//        trim: true, // Removes extra spaces
-//    },
     
     category:{
         type:mongoose.Schema.Types.ObjectId,
         ref:'Category',
         required:true,
     },
-    //subCat:{
-      //  type:String,
-      //  ref:'SubCategory',
-      //  required:true,
-      //  },
+   
     countInStock:{
         type:Number,
         required:true,
@@ -60,18 +51,6 @@ const productSchema = mongoose.Schema({
         default:0,
     },
 
-//    productRAMS:{
-  //      type:mongoose.Schema.Types.ObjectId,
-    //    default:null,
-    //},
-    //productSIZE:{
-      //  type:mongoose.Schema.Types.ObjectId,
-       // default:null,
-    //},
-   // productWEIGHT:{
-     //   type:mongoose.Schema.Types.ObjectId,
-       // default:null,
-    //},
     dateCreated:{
         type:Date,
         default:Date.now,
