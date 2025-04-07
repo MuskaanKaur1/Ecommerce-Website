@@ -2,8 +2,6 @@ const {Category} = require('../models/category.js');
 const {Product} = require('../models/product.js');
 const express = require('express');
 const router = express.Router();
-//const { ObjectId } = require('mongoose').Types;
-
 
 const multer = require('multer');
 const fs = require("fs");
@@ -76,8 +74,6 @@ const storage = multer.diskStorage({
 
 
 
-
-
 router.get(`/`, async (req,res) => {
 
     
@@ -135,16 +131,12 @@ router.post('/create', async (req,res) =>{
         brand: req.body.brand,
         price: req.body.price,
         oldPrice: req.body.oldPrice,
-        //catName:req.body.catName,
         category: req.body.category,
         countInStock: req.body.countInStock,
         rating: req.body.rating,
         isFeatured: req.body.isFeatured,
         dateCreated: req.body.dateCreated,
         discount:req.body.discount,
-        //productRAMS:req.body.productRAMS,
-        //productSIZE:req.body.productSIZE,
-        //productWEIGHT:req.body.productWEIGHT
     });
 
     product = await product.save();
@@ -156,8 +148,6 @@ router.post('/create', async (req,res) =>{
     }
     res.status(201).json(product)
     });
-
-
 
 
 
@@ -214,7 +204,6 @@ router.put(`/:id`, async (req,res) => {
                     brand: req.body.brand,
                     price: req.body.price,
                     oldPrice: req.body.oldPrice,
-                    //catName:req.body.catName,
                     category: req.body.category,
                     countInStock: req.body.countInStock,
                     rating: req.body.rating,
@@ -222,9 +211,7 @@ router.put(`/:id`, async (req,res) => {
                     isFeatured: req.body.isFeatured,
                     dateCreated: req.body.dateCreated,
                     discount:req.body.discount,
-                    //productRAMS:req.body.productRAMS,
-                    //productSIZE:req.body.productSIZE,
-                    //productWEIGHT:req.body.productWEIGHT
+                    
             },
             {new:true}
         );
