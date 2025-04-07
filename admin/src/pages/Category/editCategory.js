@@ -109,29 +109,6 @@ const EditCategory=()=>{
             }
         ))
     }
-{/*
-    const onChangeFile = async(e, apiEndPoint) =>{
-        try{
-            const imgArr = [];
-            const files = e.target.files;
-            setImgFiles(e.target.files)
-            for(var i=0; i<files.length; i++){
-                const file = files[i];
-                imgArr.push(file);
-                formdata.append(`images`,file);
-            }
-    
-            setFiles(imgArr);
-            
-            postData(apiEndPoint, formdata).then((res) =>{
-                console.log(imgArr)
-            });
-        }
-        catch(error){
-            console.log(error)
-        }
-      }
-*/}
 
        const onChangeFile = async(e, apiEndPoint) =>{
               try{
@@ -289,38 +266,12 @@ const EditCategory=()=>{
                        
                             <Button type="submit" className='btn-blue btn-lg w-100' ><FaCloudUploadAlt/>&nbsp;{isLoading===true ? <CircularProgress color="inherit" className='loader'/>: 'PUBLISH AND VIEW'}</Button>                        
 
-            </div>
-
-                        
+            </div>    
 
                     </div>
 
-                    
-
-
                 </div>
-                {/*
-                <div className='col-sm-5'>
-                <div className='card p-4'>
-                        <h5 className="mb-4 color-white">ORGANIZATION</h5>
-                        <div className='form-group'>
-                            <h6>ADD BRAND</h6>
-                            <input type='text' className='w-50' placeholder='type here'/>&nbsp;&nbsp;
-                            <Button variant="contained" href="#contained-buttons">ADD</Button>
-                        </div>
-                        <div className='form-group '>
-                            <h6 className='mt-3'>ADD SIZE</h6>
-                            <input type='text' className='w-50' placeholder='type here'/>&nbsp;&nbsp;
-                            <Button variant="contained" href="#contained-buttons">ADD</Button>
-                        </div>
-                        <div className='form-group '>
-                            <h6 className='mt-3'>ADD PRICE</h6>
-                            <input type='text' className='w-50' placeholder='type here'/>&nbsp;&nbsp;
-                            <Button variant="contained" href="#contained-buttons">ADD</Button>
-                        </div>
-                        </div>
-                        </div>
-                        */}
+
 
             </div>
             </form>
