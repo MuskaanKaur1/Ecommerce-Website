@@ -283,28 +283,7 @@ const AddCategory=()=>{
 
 
                 </div>
-                {/*
-                <div className='col-sm-5'>
-                <div className='card p-4'>
-                        <h5 className="mb-4 color-white">ORGANIZATION</h5>
-                        <div className='form-group'>
-                            <h6>ADD BRAND</h6>
-                            <input type='text' className='w-50' placeholder='type here'/>&nbsp;&nbsp;
-                            <Button variant="contained" href="#contained-buttons">ADD</Button>
-                        </div>
-                        <div className='form-group '>
-                            <h6 className='mt-3'>ADD SIZE</h6>
-                            <input type='text' className='w-50' placeholder='type here'/>&nbsp;&nbsp;
-                            <Button variant="contained" href="#contained-buttons">ADD</Button>
-                        </div>
-                        <div className='form-group '>
-                            <h6 className='mt-3'>ADD PRICE</h6>
-                            <input type='text' className='w-50' placeholder='type here'/>&nbsp;&nbsp;
-                            <Button variant="contained" href="#contained-buttons">ADD</Button>
-                        </div>
-                        </div>
-                        </div>
-                        */}
+              
 
 
             </div>
