@@ -25,11 +25,6 @@ import { fetchDataFromApi } from "./utils/api";
 import AddProductRAMS from "./pages/Products/addProductRAMS";
 
 
-//import SubCatAdd from "./pages/Category/addSubCat";
-//import SubCatList from "./pages/Category/subCategoryList";
-//import EditSubCategory from "./pages/Category/editSubCat";
-
-
 
 const MyContext = createContext();
 
@@ -43,7 +38,6 @@ function App() {
   const [isOpenNav,setIsOpenNav] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [catData, setCatData] = useState([]);
-  //const [subCatData,setSubCatData] = useState([]);
 
   
     
@@ -98,14 +92,6 @@ function App() {
       setProgress(100);
     })
   }
-{/*
-  const fetchSubCategory=()=>{
-       fetchDataFromApi('/api/subCat').then((res)=>{
-        setSubCatData(res);
-        setProgress(100);
-        })
-      }
-*/} 
   
   useEffect(()=>{
 
@@ -146,9 +132,6 @@ function App() {
     catData,
     setCatData,
     fetchCategory,
-    //subCatData,
-    //setSubCatData,
-    //fetchSubCategory
   }
 
 
@@ -206,10 +189,6 @@ function App() {
           <Route path="/category" exact={true} element={<Category/>}/>
           <Route path="/category/add" exact={true} element={<AddCategory/>}/>
           <Route path="/category/edit/:id" exact={true} element={<EditCategory/>}/>
-          {/*<Route path="/subCat/add" exact={true} element={<SubCatAdd/>}/>
-          <Route path="/subCategory/" exact={true} element={<SubCatList/>}/>
-          <Route path="/subCategory/edit/:id" exact={true} element={<EditSubCategory/>}/>*/}
-          <Route path="/productRAMS/add" exact={true} element={<AddProductRAMS/>}/>
 
 
         </Routes>
