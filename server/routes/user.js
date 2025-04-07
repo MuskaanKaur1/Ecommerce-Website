@@ -161,15 +161,3 @@ router.get("/me", auth, async (req, res) => {
 
 module.exports = router;
 
-
-//Token
-
-//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoibXVzc2kiLCJwaG9uZSI6IjEyMzQ1Njc4OTAiLCJlbWFpbCI6ImFiY0BnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRGTEx0ZU1hQVNyNkFhV2poQkg3S0FlaWhNN0RGOFpWT3lJdGVtd3dNMG8vYlQ2aU14d0liQyIsIl9pZCI6IjY3Yjc1MTRiZWQwMzJkODY5MGIzMTlkYSIsIl9fdiI6MCwiaWQiOiI2N2I3NTE0YmVkMDMyZDg2OTBiMzE5ZGEifSwiaWQiOiI2N2I3NTE0YmVkMDMyZDg2OTBiMzE5ZGEiLCJpYXQiOjE3NDAwNjcxNDd9.Wj0vgthgVx12O80zlSBPt1HMJBqls2XqXemuNy6g-Vc
-
-{/*
-    "name": "muskaan",
-    "phone": "1234567890",
-    "email":"muskaan@gmail.com",
-    "password":"muskaan"
-    */}
-
