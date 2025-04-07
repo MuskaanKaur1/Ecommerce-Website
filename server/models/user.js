@@ -5,7 +5,7 @@ const userSchema = mongoose.Schema({
     phone: { type: String, required: true },
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true }
-}, { timestamps: true }); // ✅ Add timestamps
+}, { timestamps: true }); // Add timestamps
 
 userSchema.virtual('id').get(function () {
     return this._id.toHexString();
