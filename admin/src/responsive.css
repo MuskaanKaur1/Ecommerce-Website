@@ -1,0 +1,167 @@
+@media only screen and (min-width:320px) and (max-width:992px){
+
+    .res-hide{display: none !important;}
+    .res-col{flex-direction: column !important;}
+   
+
+    body,html{overflow-x: hidden !important;}
+
+    header{padding: 15px 0px; height: auto;}
+    header .part1,header .part3{padding:0px !important;}
+    header .part1{max-width: 30% !important; flex: 0 0 30%;}
+    header .logo {width: 100px !important;}
+    header .part3{max-width: 70% !important; flex: 0 0 70%;}
+
+    header .navPart2 ul {margin-left: 0px !important; margin-right: -22px !important;}
+
+    header .navPart2 ul li{margin-left: -11px; margin-right: -50px !important;}
+    header .imgSize{width: 45px !important; height: 45px !important;    margin-right: 5px !important;}
+    header .userInfo{margin-left:-7px !important;}
+    header .userInfo h5{font-size: 12px;}
+    .list-inline-item:not(:last-child) {
+        margin-right: -7px !important;
+    }
+    header .userInfo h5{margin-right: 20px !important; font-size: 14px !important;}
+
+    header .navPart2 ul li .submenu a button{padding: 0px;}
+    header .navPart2 ul li .submenu{height: auto;}
+    header .navPart2 ul li .submenu a button svg{font-size: 16px;}
+    header .navPart2 ul li .submenu h4{font-size:18px;}
+    header .part3 .submenu .head h4{font-size: 18px;}
+    
+
+    .main .sidebarWrapper{width: 100% !important; height: 100vh !important; position: fixed; top: 0px; left: -100px; z-index: 10000; opacity: 0; transition:all 0.4s ease-in-out;}
+    .main .sidebarWrapper .sidebar{width: 80% !important; position: relative !important; top: 0px !important; max-height: inherit !important;}
+
+    .sidebarWrapper.open{left:0px !important; opacity: 1 !important;}
+
+    .sidebarOverlay{position: fixed; top: 0px; left: 0px; background: rgba(0,0,0,0.7); z-index: 100; width: 100%; height: 100% !important;z-index: 1000;}
+    .sidebarOverlay.show{display:block !important}
+
+    .main .content{width: 100% !important; flex: 0 0 100% !important;}
+    .right-content{padding: 90px 15px !important;}
+
+    .dashboardBoxWrapper{flex-wrap: nowrap !important; overflow-x: scroll; overflow-y: hidden; display: block !important; gap: 5px !important; margin-top: 10px; margin-bottom: 10px;}
+    .dashboardBox .icon svg {margin-left: 70px !important;font-size: 36px !important;}
+
+    .dashboardBoxWrapper::-webkit-scrollbar{display: none !important;}
+    .dashboardBoxWrapperRow{display: flex !important;}
+    .dashboardBoxWrapper .dashboardBox { display: inline-block !important; min-width:70% !important; width:70% !important; height: 160px !important; margin-right: 10px !important;}
+    .topPart2{padding-left: 10px !important;}
+
+    .graphBox {padding: 11px !important;}
+
+    .form .form-group input{min-width: 100% !important; width: 100% !important;}
+
+    
+    .tableFooter nav ul{flex-wrap: nowrap !important; overflow-x: scroll; overflow-y: hidden; margin-top: 10px; margin-bottom: 10px;}
+    .tableFooter nav ul li{display: inline-block !important; width: max-content !important; height: 45px !important;margin-right: -14px !important;margin-bottom: 10px !important;}
+
+
+    header .navPart2 ul li a{padding:4px 10px !important;margin-right: 19px;}
+    header .navPart2 ul { margin-bottom: 0px;margin-left: 40px !important;}
+    header .userInfo{display: none !important;}
+    header .imgSize {margin-right: 70px !important;}
+    .sliderWrapper .item1 {padding: 10px 20px !important;padding-right: 74px !important;}
+    .slick-slider {
+        width: 335px;
+    }
+
+    .productdetailsSection .sliderWrapper .gallery { padding: 0px !important; padding-left: 71px !important;}
+    .css-5cvx94-MuiTypography-root-MuiBreadcrumbs-root{margin-top:15px !important}
+
+    .right-content .card .item img {padding: 5px 10px;border: 1px dashed black;border-radius: 10px;}
+    .right-content .card .item{padding: 5px 10px !important;}
+    .swiper-slide{margin-right: 6px !important;}
+
+    .productDetailsInfo h6{padding-left: 60px !important;}
+    .productDetailsInfo h4{font-size: 21px; font-weight: 500; padding-left: 15px;}
+
+    .productDetailsInfo .productInfo .col-sm-5{max-width: 200px !important; flex: 0 0 200px !important;padding-left: 30px !important;}
+    .productDetailsInfo .productInfo .col-sm-7{max-width: 100% !important; flex: 0 0 100% !important; padding-left: 73px !important;}
+
+    .productdetailsSection .productInfo .col-sm-7 button{margin-bottom: 5px ;}
+
+    .ratingSection {width: 248px !important; margin-left: -7px;}
+    .ratingSection .ratingGrow .col-1 {width: 18% !important;flex: 0 0 18% !important; padding-right:3px !important; font-size: 15px !important; }
+    .ratingSection .ratingGrow .col-2 {width: 68% !important;flex: 0 0 68% !important;}
+    .ratingSection .ratingGrow .col-3 {width: 14% !important;flex: 0 0 14% !important;padding-left: 10px !important;font-size: 13px;}
+
+    .reviewSection{padding-right: 25px !important;}
+    .reviewForm {width: 90%; padding-right: 25px;}
+
+    .loginSection {width: 151%;}    
+    .signUpSection {height: 132vh !important;}
+    .signUpSection .col-md-8{display: none !important;}
+
+
+    .form .form-group .row .box {width: 121px !important; margin-left: 18px; margin-bottom: 15px; max-width: 224px !important; margin-top: 10px;}
+
+    .css-frqlm1-MuiChip-root{margin-bottom: 7px;}
+
+    .table td .productBox{width: 100%; flex: 0 0 100%}
+    .table td .productBox .imgWrapper{width: 40%;flex: 0 0 40%;}
+    .table td .productBox .info{width: 60%;flex: 0 0 60%;}
+
+}
+
+@media only screen and (min-width:320px) and (max-width:570px){
+
+    header .navPart2 ul li a{padding:4px 10px !important;margin-right: 19px;}
+    header .navPart2 ul { margin-bottom: 0px;margin-left: 40px !important;}
+    header .userInfo{display: none !important;}
+    header .imgSize {margin-right: 70px !important;}
+    .sliderWrapper .item1 {padding: 10px 20px !important;padding-right: 74px !important;}
+
+    .productdetailsSection .sliderWrapper .gallery { padding: 0px !important; padding-left: 71px !important;}
+    .css-5cvx94-MuiTypography-root-MuiBreadcrumbs-root{margin-top:15px !important}
+
+    .form .col{max-width: 100% !important; flex: 0 0 100% !important;}
+
+    .form .form-group input {width: 90% !important; min-width: 90% !important;}
+    .form .form-group textarea { width: 90% !important;flex: 0 0 90% !important;}
+    .imgUploadBox .uploadBox img{width: 83px !important;height: 100px !important;}
+    .imgUploadBox .uploadBox .info svg {font-size: 45px !important;}
+    .imgUploadBox .uploadBox .info h5 {font-size: 20px !important;}
+
+    .card .marginTop {margin-top: 10px !important;}
+    .signUpSection .col-md-8{display: none !important;}
+
+    header .navPart2 ul li .submenu{top: 160%; left: -87px; min-width: 180px; padding: 10px 11px;}
+    header .part3 .submenu .userImg{padding-right: 0px !important; margin-right: -60px;}
+    .list-inline-item:not(:last-child) {
+        margin-right: 32px !important;
+    }
+}
+
+
+@media only screen and (min-width:320px) and (max-width:700px){
+    .loginSection { width: 100% !important;height: 125vh !important;}
+    .loginSection .loginBox {width: 273px !important;}
+
+    .googleIcon {height: 45px !important;width: 192px !important;}
+
+    .signUpSection .col-md-8{display: none !important;}
+    .loginSection .loginBox .wrapper .form-group .icon { top: 6px;left: 10px;font-size: 18px; }
+    .loginSection .loginBox .wrapper .form-control {padding-left: 30px !important;}
+    .list-inline-item:not(:last-child) {
+        margin-right: 39px !important;
+    }
+}
+
+
+@media only screen and (min-width:700px) and (max-width:900px){
+.list-inline-item:not(:last-child) {
+    margin-right: 39px !important;
+}
+
+}
+
+
+@media only screen and (min-width:900px) and (max-width:2000px){
+
+.list-inline-item:not(:last-child) {
+    margin-right: 2.5rem !important;
+}
+
+}
