@@ -115,7 +115,7 @@ const SignUp=()=>{
                             onChange={(e) => setPassword(e.target.value)}/>
                         </div>
 
-                        {/* <a className="border-effect cursor row">Forget Password?</a> */}
+                         <a className="border-effect cursor row">Forget Password?</a> 
                         <div className="d-flex align items-center mt-2 mb-2">
                             <div className="row w-100">
                             <div className="col-md-6">
@@ -133,10 +133,10 @@ const SignUp=()=>{
                         
 
                         <p>Already have an account? <Link to="/SignIn" className="border-effect">SignIn</Link> </p>
-                        {/*<h6 className="mt-3 text-center font-weight-bold">Or continue with social account</h6>
+                        <h6 className="mt-3 text-center font-weight-bold">Or continue with social account</h6>
 
                        
-                        <Button className="googleImgSignup"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS53QVG-0mxeuhm8Vg_w0646YfPvJK3Q0HGA&s" /></Button>*/}
+                        <Button className="googleImgSignup"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS53QVG-0mxeuhm8Vg_w0646YfPvJK3Q0HGA&s" /></Button>
                         
                          
 
