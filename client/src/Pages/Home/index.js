@@ -83,7 +83,7 @@ const Home=()=>{
             fetchDataFromApi("/api/product").then((res) => {
                 console.log("API Response:", res.products); // Debugging
                 const filtered = res.products.filter(
-                    product => product.category?.name === selectedCat // ✅ Correct field check
+                    product => product.category?.name === selectedCat // Correct field check
                 );
                 console.log("Filtered Products:", filtered); // Debugging
                 setFilteredData(filtered);
@@ -158,33 +158,6 @@ const Home=()=>{
 
                 </div>
 
-
-{/*
-
-                <div className="product_row w-100 mt-4">
-                <Swiper
-                    slidesPerView={4}
-                    spaceBetween={10}
-                    slidesPerGroup={3}
-                    modules={[Navigation]}
-                    className="mySwiper"
-                >
-                    {
-                        filteredData?.length!==0 && filteredData?.map((item,index) => {
-                            return(
-                                <SwiperSlide key={index}>
-                                    <ProductItem item={item}/>
-                                </SwiperSlide>
-
-                            )
-                        })
-                    }
-                </Swiper>
-            </div>
-*/}        
-         
-
-
             <div>
            <div className="banner">
                 <img src={banner6} className="cursor" />
@@ -226,42 +199,7 @@ const Home=()=>{
                         </div>
                     </div>
 
-{/*
-                <div className="d-flex align-items-center mt-5">
-                    <div className="info w-75">
-                        <h3 className="mb-0 hd">FEATURED PRODUCTS</h3>
-                        <p className="text-light text-sml mb-0">New products with updated stocks</p>
-                    </div>
-                    <Button className="viewAllBtn ml-auto">View All<FaLongArrowAltRight/></Button>
-                </div>
-
-                <div className="product_row w-100 mt-4">
-
-                
-                <Swiper
-                    slidesPerView={4}
-                    spaceBetween={10}
-                    pagination={{
-                    clickable: true,
-                    }}
-                    modules={[Navigation]}
-                    className="mySwiper"
-                >
-
-                {
-                    productsData?.products?.length !==0 && productsData?.products?.map((item,index) => {
-                        return(
-                            <SwiperSlide key={index}>
-                                <ProductItem item={item}/>
-                            </SwiperSlide>
-
-                        )
-                    })
-                }
-                    
-                </Swiper>
-                </div>
-*/}            
+           
 
             </div>
         </div>
@@ -288,10 +226,7 @@ const Home=()=>{
             </div>
         </div>
         </section>
-      
 
-
-       
         </>
     )
 }
